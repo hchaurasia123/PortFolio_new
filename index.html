@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Website</title>
+    <link rel="stylesheet" href="index.css">
+   
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   
+</head>
+<body>
+    
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="headertext">
+                <p>Front End developer</p>
+                <h1>Hi,I'm <span>Harshit </span><br>Chaurasia from India</h1>
+            </div>
+        </div>
+        
+    </div>
+
+
+<!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_1">
+                     <img src="image1.png" alt="">
+                </div>
+                <div class="about_2">
+                    <h1 class="sub-tittle">About me</h1>
+                    <p>I'm an MCA student with a background in BCA and a passion for technology and software development. I have hands-on experience in web development using HTML, CSS, JavaScript, and React.js, and backend development with Java, Node js, and MySQL.mongodb  Eager to apply my knowledge and grow further, I'm looking for exciting internship opportunities where I can contribute to real-world projects and enhance my skills.</p>
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('project')">Project</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>React js developer</span><br>Create the Web page Interface</li>
+                            <li><span>Backend developer</span><br>Write a logic </li>
+                            <li><span>SQL developer</span><br>Manipulating of data </li>
+                        </ul>
+                    </div>
+
+                    
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2025</span><br>MCA(Master of Computer Application) CSJM University</li>
+                            <li><span>2020-2023</span><br>BCA (Batchelor of Computer Application) Graphic Era University</li>
+                            <li><span>2020</span><br>Intermediate</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents"  id="project">
+                        <ul>
+                        
+                        <li><span>2023-feb</span><br>Create a Simple Calculator</li>
+                        
+                        <li><span>2023-March </span><br>Create a Signform and login form</li>
+
+                        <li><span>2023-April</span><br>Image search bar</li>
+                        <li><span>2023-june</span><br>Java Quiz Application </li>
+                        <li><span>2024-August</span><br>CRUD operation Project</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service -->
+
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I am passinate web developer</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div >
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Java Teaching</h2>
+                    <p>I have a good knowledge java</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- portfolio -->
+
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-tittle">
+            My Work
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="software1.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the talented people around the world Download it from play store</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+            </div>
+
+            <div class="work">
+                <img src="software2.jpeg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the talented people around the world Download it from play store</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+
+            <div class="work">
+                <img src="software3.jpg" alt="">
+                <div class="layer">
+                    <h3>Online social App</h3>
+                    <p>The app connects you yo the talented people around the world Download it from play store</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a class="btn" href="#" >See More</a>
+    </div>
+</div>
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                 <h1 class="sub-tittle">Contact me</h1>
+                 <p>conatct@example</p>
+                 <i class="fa-regular fa-envelope"></i>
+                 <p>123456789</p>
+                 <i class="fa-solid fa-phone-volume"></i>
+                 <div class="social-icon">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                 </div>
+                 <a href="Official_resume.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+        
+       
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+<div class="copyright">
+    <p>Copyright ~ Made by Harshit Chaurasia </p>
+</div>
+
+</div>
+
+
+    <script>
+
+
+     
+
+
+var tablinks=document.getElementsByClassName("tab-links")
+var tabcontents=document.getElementsByClassName("tab-contents")
+
+function opentab(tabname){
+    for(tablink of tablinks ){
+        tablink.classList.remove("active-link")
+    }
+
+    for(tabcontent of tabcontents ){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+
+}
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxVcuPp5wuPhH8zQrNgoFcv8H1HGg7jOTpQXYBbSbP0nOhwxFOBHvPLexCkwG-lt5dUeQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        
+        const msg=document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+           msg.innerHTML="Message sent Succesfully"
+           setTimeout(function(){
+            msg.innerHTML=""
+            
+           },5000)
+           form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
